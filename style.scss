@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import 'reset';
+@import 'variables';
+
+.attribution { font-size: 11px; text-align: center; color: black;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    font-family: $font-body;
+    font-size:  pxToRem(15);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange-bg {
+    background-color: $color-bright-orange;
+}
+
+.cyan-bg {
+    background-color: $color-dark-cyan;
+}
+
+.dark-cyan-bg {
+    background-color: $color-very-dark-cyan;
+}
+
+.orange-txt {
+    color: $color-bright-orange;
+}
+
+.cyan-txt {
+    color: $color-dark-cyan;
+}
+
+.dark-cyan-txt {
+    color: $color-very-dark-cyan;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    flex-basis: 300px;;
+    padding: 2.5rem;
+
+    &__title, img {
+        margin-bottom: 1.5rem;
+    }
+
+    &__title {
+        font-family: $font-titles;
+        font-weight: $font-weight-bold;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-family: $font-body;
+        font-weight: $font-weight-normal;
+        color: $color-transparent-white;
+    }
+
+    &__btn {
+        background-color: #FFF;
+        text-decoration: none;
+        border-radius: 2rem;
+        border: 2px solid white;
+        padding: .8rem 2rem;
+        margin-top: 4.5rem;
+        display: inline-block;
+
+        &:hover {
+           background-color: transparent;
+           color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    body {
+        height: auto;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }    
+}
