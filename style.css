@@ -109,6 +109,14 @@ body {
   background-color: transparent;
   color: white;
 }
+.card:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.card:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
 @media screen and (max-width: 425px) {
   body {

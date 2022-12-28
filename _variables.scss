@@ -16,6 +16,8 @@ $font-body: 'Lexend Deca', sans-serif;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 
+$border-radius: 5px;
+
 @function pxToRem($px) {
      @return calc($px / 16) + rem;
 }
